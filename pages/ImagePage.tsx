@@ -11,21 +11,21 @@ export default function ImagePage() {
     // Create and configure your Cloudinary instance.
     const cld = new Cloudinary({
         cloud: {
-            cloudName: 'dhft3limy'
+            cloudName: 'dcutvwvl0'
         }
     });
 
     // Use the image with public ID, 'front_face'.
-    const myImage = cld.image('samples/chair');
+    const myImage = cld.image('Fino_rxfesb');
 
     // Apply the transformation.
     myImage
-      .effect(sepia());  // Apply a sepia effect.
+      
 
     // Render the transformed image in a React Native component.
     return (
       <SafeAreaView style={{flex: 1, justifyContent: 'center'}}>
-        <AdvancedImage cldImg={myImage} style={{ width: 200, height: 200, alignSelf: 'center'}} />
+        <AdvancedImage cldImg={myImage} style={{ width: 300, height: 400, alignSelf: 'center'}} />
       </SafeAreaView>
     )
 };
